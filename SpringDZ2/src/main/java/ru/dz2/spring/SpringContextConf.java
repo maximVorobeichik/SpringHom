@@ -7,6 +7,7 @@ import ru.dz2.spring.architecture.Cart;
 import ru.dz2.spring.architecture.Product;
 import ru.dz2.spring.architecture.ProductRepository;
 
+
 @Configuration
 public class SpringContextConf {
 
