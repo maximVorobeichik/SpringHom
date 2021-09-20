@@ -8,14 +8,17 @@ import java.util.List;
 
 public class DaoProducts {
     private EntityManagerFactory factory;
-    private EntityManager entityManager;
 
-    public DaoProducts() {
-        this.factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-         this.entityManager = factory.createEntityManager();
+
+    public DaoProducts(EntityManagerFactory factory) {
+        this.factory = factory;
     }
-    public List<Product> FindProductsByIdBuyer(int id){
 
+
+
+
+    public List<Product> FindProductsByIdBuyer(int id){
+        EntityManager entityManager = factory.createEntityManager();
         entityManager.getTransaction().begin();
 
         List<Product> author = entityManager.createQuery("SELECT a FROM Product a  WHERE a.buyer ="+id, Product.class).getResultList();
@@ -26,6 +29,7 @@ public class DaoProducts {
     }
 
     public void Create(){
+        EntityManager entityManager = factory.createEntityManager();
         entityManager.getTransaction().begin();
 
         Buyer buyer=new Buyer(12,"Max");
