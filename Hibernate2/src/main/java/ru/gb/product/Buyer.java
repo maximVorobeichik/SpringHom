@@ -44,6 +44,19 @@ public class Buyer {
     public void addProduct(Product inputProduct){
         product.add(inputProduct);
     }
+
+    @Override
+    public String toString() {
+        return "Buyer{" +
+                "buyerId=" + buyerId +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    public Buyer() {
+    }
+
     public Buyer(int id, String name) {
         this.id = id;
         this.name = name;
