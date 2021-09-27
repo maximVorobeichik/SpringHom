@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringDZ2/SpringDZ2.iml" filepath="$PROJECT_DIR$/SpringDZ2/SpringDZ2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringDz.iml" filepath="$PROJECT_DIR$/.idea/SpringDz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3DZSpring/application.iml" filepath="$PROJECT_DIR$/3DZSpring/application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstDzTom/application (1) (ru.gb.web).iml" filepath="$PROJECT_DIR$/FirstDzTom/application (1) (ru.gb.web).iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot4Dz/gb-web-app.iml" filepath="$PROJECT_DIR$/SpringBoot4Dz/gb-web-app.iml" />
+    </modules>
+  </component>
+</project>
