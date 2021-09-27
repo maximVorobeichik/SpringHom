@@ -2,7 +2,3 @@ server:
   port: 8082
   servlet:
     context-path: /first-spring-aplication/
-    server:
-      error:
-        whitelabel:
-          enabled=false:
