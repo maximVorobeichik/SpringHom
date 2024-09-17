@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="application (1) (ru.gb.web):war">
+    <output-path>$PROJECT_DIR$/FirstDzTom/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>application (1) (ru.gb.web)</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="application-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="application (1) (ru.gb.web):war exploded" />
+    </root>
+  </artifact>
+</component>
