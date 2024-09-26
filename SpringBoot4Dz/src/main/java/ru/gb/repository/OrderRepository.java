@@ -1,0 +1,54 @@
+package ru.gb.repository;
+
+import org.springframework.stereotype.Repository;
+import ru.gb.domain.Order;
+import ru.gb.domain.Product;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public class OrderRepository {
+    private List<Order> order;
+
+    public OrderRepository() {
+        this.order = new ArrayList<Order>(
+                List.of(
+                        new Order(1,2,3,"dsa"),
+                        new Order(2,22,33,"dsaa")
+
+                )
+        );
+    }
+
+    public Optional<Order> findById(int id) {
+        return order.stream().filter(p -> p.getId() == id).findFirst();
+    }
+    public Optional<Order> findByProducts(String product) {
+        return order.stream().filter(p -> p.getProducts() == product).findFirst();
+    }
+
+    public List<Order> findAll() {
+        return order;
+    }
+
+    public void add(Order order) {
+        this.order.add(order);
+    }
+    public void remove(int id) {
+        Order order = findById(id).orElseThrow();
+        this.order.remove(order);
+    }
+
+    public void setOrder(List<Order> order) {
+        this.order = order;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderRepository{" +
+                "order=" + order +
+                '}';
+    }
+}
